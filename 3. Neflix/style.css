@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: border-box;
+    font-family: "Times New Roman";
+}
+
+.logo {
+    background-image: url(logo.png);
+    background-size: cover;
+    height: 68px;
+    width: 211px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9)), url("hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    color: white;
+    height: 80vh;
+    /* filter: brightness(50%); */
+}
+
+.manu {
+    display: flex;
+    align-items: center;
+}
+.sign_in {
+    color: white;
+    background-color: #e50914;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emailbar {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    color: black;
+    /* background-color: #E50914; */
+    height: 50px;
+}
+.emailbar button {
+    height: 50px;
+    width: 160px;
+    cursor: pointer;
+    background-color: #e50914;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+}
+.emailbar input {
+    width: 60vw;
+    color: aliceblue;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 4px;
+}
+
+/* text */
+.text1 {
+    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.text2 {
+    padding-top: 30px;
+    font-size: clamp(1rem, 5vw 4rem);
+}
+
+.tranding {
+    display: flex;
+}
+.box {
+    display: inline-block;
+    /* border: 5px solid red; */
+    height: 50vh;
+    width: 20vw;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.last {
+    margin-right: 40px;
+}
+.trending {
+    color: white;
+    margin-top: 0;
+    padding-left: 20px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+}
+.img {
+    height: 88%;
+    width: 99%;
+    background-size: cover;
+    border-radius: 15px;
+}
+.main {
+    background-color: black;
+    height: 800px;
+    width: auto;
+}
+
+/* reason */
+
+.reason {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.reason-box {
+    height: 50vh;
+    width: 25%;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, #111934, #2e0e26);
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    padding: 20px 15px;
+    position: relative; /*So that the absolute works on respect of it*/
+}
+
+.reason-box > :nth-child(1) {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 15px 0px;
+}
+
+.reason-box > :nth-child(2) {
+    font-size: 16px;
+}
+
+.reason-img svg {
+    height: 90px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* faq */
+.faq {
+    /* background-color: aliceblue; */
+    text-align: center;
+    color: white;
+}
+
+.faq_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.faq-qus {
+    background-color: #2d2d2d;
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+
+    cursor: pointer;
+}
+.faq1 {
+    margin: 10px 0px;
+    padding: 25px 0px;
+}
+.plus {
+    font-size: xx-large;
+    margin-right: 20px;
+}
+
+.faq_text :hover {
+    background-color: #626262;
+}
+
+/* .emailbarlast */
+.lastemailbar {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+/* Footer */
+.footer-content {
+    background-color: black;
+    color: white;
+}
+.footer-ques {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.footer-ques ul {
+    list-style: none;
+}
+.footer-ques li {
+    padding: 5px 0;
+}
+
+.Questions {
+    margin-bottom: 20px;
+    margin-left: 120px;
+    font-size: 24px;
+}
+
+/* media  */
+
+@media screen and (max-width: 600px) {
+    /* To make the nevbar collomwise when is is zoomed in */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .logo {
+        position: static;
+        margin: 10px auto;
+    }
+
+    .sign_in {
+        position: static;
+        margin: 10px auto;
+    }
+
+    .emailbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .emailbar input {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .emailbar button {
+        width: 20%;
+    }
+
+    .tranding {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80vw;
+        margin: 10px 0;
+    }
+
+    .reason {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason-box{
+        width: 90%;
+        height: auto;
+    }
+    .faq-qus{
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .footer-ques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Questions {
+        margin-left: 0;
+        text-align: center;
+    }
+}
